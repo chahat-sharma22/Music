@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>My Music Player</h1>
+    </div>
+
+    <div class="grid">
+        <!-- Player 1 -->
+        <div class="player">
+            <h1>Khushi Jab b teri..</h1>
+            <img src="images/khuushi.jpg" alt="khushi jbb teri">
+            <button id="khushi">Play</button>
+            <button id ="pause1">Pause</button>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player">
+            <h1>Raatan lambiya..</h1>
+            <img src="images/lmbi.jpg" alt="khushi jbb teri">
+            <button id="lmbi">Play</button>
+            <button id="pause2">Pause</button>
+        </div>
+
+        <!-- Player 3 -->
+        <div class="player">
+            <h1>Sun rha hai na tu..</h1>
+            <img src="images/ssun.jpg" alt="khushi jbb teri">
+            <button id="sunrha">Play</button>
+            <button id="pause3">Pause</button>
+        </div>
+
+        <!-- Player 4 -->
+        <div class="player">
+            <h1>Tum hi aana..</h1>
+            <img src="images/tumm.jpg" alt="khushi jbb teri">
+            <button id="tum">Play</button>
+            <button id="pause4">Pause</button>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    
+let sunrha=new Audio("audios/sunrha.mp3");
+    document.getElementById("sunrha").addEventListener("click",()=>{
+        sunrha.play();
+    })
+    document.getElementById("pause3").addEventListener("click",()=>{
+        sunrha.pause();
+    })
+    let khushi=new Audio("audios/khushi.mp3");
+    document.getElementById("khushi").addEventListener("click",()=>{
+        khushi.play();
+    })
+    document.getElementById("pause1").addEventListener("click",()=>{
+        khushi.pause();
+    })
+    let lmbi=new Audio("audios/lamb.mp3");
+    document.getElementById("lmbi").addEventListener("click",()=>{
+        lmbi.play();
+    })
+    document.getElementById("pause2").addEventListener("click",()=>{
+        lmbi.pause();
+    })
+    let tumhi=new Audio("audios/tumhi.mp3");
+    document.getElementById("tum").addEventListener("click",()=>{
+        tumhi.play();
+    })
+    document.getElementById("pause4").addEventListener("click",()=>{
+        tumhi.pause();
+    })
+</script>
+</html>
