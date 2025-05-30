@@ -9,14 +9,14 @@
 <body>
 
     <div class="header">
-        <h1>My Music Player</h1>
+        <h1>My Music Playlist</h1>
     </div>
 
     <div class="grid">
         <!-- Player 1 -->
         <div class="player">
             <h1>Khushi Jab b teri..</h1>
-            <img src="/khuushi.jpg" alt="khushi jbb teri">
+            <img src="khuushi.jpg" >
             <button id="khushi">Play</button>
             <button id ="pause1">Pause</button>
         </div>
@@ -24,7 +24,7 @@
         <!-- Player 2 -->
         <div class="player">
             <h1>Raatan lambiya..</h1>
-            <img src="/lmbi.jpg" alt="khushi jbb teri">
+            <img src="lmbi.jpg" >
             <button id="lmbi">Play</button>
             <button id="pause2">Pause</button>
         </div>
@@ -32,7 +32,7 @@
         <!-- Player 3 -->
         <div class="player">
             <h1>Sun rha hai na tu..</h1>
-            <img src="/ssun.jpg" alt="khushi jbb teri">
+            <img src="ssun.jpg" >
             <button id="sunrha">Play</button>
             <button id="pause3">Pause</button>
         </div>
@@ -40,43 +40,76 @@
         <!-- Player 4 -->
         <div class="player">
             <h1>Tum hi aana..</h1>
-            <img src="/tumm.jpg" alt="khushi jbb teri">
+            <img src="tumm.jpg" >
             <button id="tum">Play</button>
             <button id="pause4">Pause</button>
         </div>
-    </div>
+        <!-- player5 -->
+        <div class="player">
+            <h1>Kabil..</h1>
+            <img src="kabil.jpg" >
+            <button id="kabil">Play</button>
+            <button id="pause5">Pause</button>
+        </div>
+        <!-- player 6 -->
+        <div class="player">
+            <h1>Aee di hai muskil..</h1>
+            <img src="aee.jpeg" >
+            <button id="aee">Play</button>
+            <button id="pause6">Pause</button>
+        </div>
 
+
+
+    </div>
+<div class="footer">
+        <footer>Made by Chahat</footer>
+    </div>
 </body>
 <script>
 
     
-let sunrha=new Audio("audios/sunrha.mp3");
+let sunrha=new Audio("sunrha.mp3");
     document.getElementById("sunrha").addEventListener("click",()=>{
         sunrha.play();
     })
     document.getElementById("pause3").addEventListener("click",()=>{
         sunrha.pause();
     })
-    let khushi=new Audio("audios/khushi.mp3");
+    let khushi=new Audio("khushi.mp3");
     document.getElementById("khushi").addEventListener("click",()=>{
         khushi.play();
     })
     document.getElementById("pause1").addEventListener("click",()=>{
         khushi.pause();
     })
-    let lmbi=new Audio("audios/lamb.mp3");
+    let lmbi=new Audio("lamb.mp3");
     document.getElementById("lmbi").addEventListener("click",()=>{
         lmbi.play();
     })
     document.getElementById("pause2").addEventListener("click",()=>{
         lmbi.pause();
     })
-    let tumhi=new Audio("audios/tumhi.mp3");
+    let tumhi=new Audio("tumhi.mp3");
     document.getElementById("tum").addEventListener("click",()=>{
         tumhi.play();
     })
     document.getElementById("pause4").addEventListener("click",()=>{
         tumhi.pause();
+    })
+     let kabil=new Audio("kabil.mp3");
+    document.getElementById("kabil").addEventListener("click",()=>{
+        kabil.play();
+    })
+    document.getElementById("pause5").addEventListener("click",()=>{
+        kabil.pause();
+    })
+    let muskil=new Audio("aee.mp3");
+    document.getElementById("aee").addEventListener("click",()=>{
+        muskil.play();
+    })
+    document.getElementById("pause6").addEventListener("click",()=>{
+        muskil.pause();
     })
 </script>
 </html>
